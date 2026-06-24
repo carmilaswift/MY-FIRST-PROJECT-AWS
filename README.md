@@ -1,6 +1,7 @@
 # 📋 Kanban Board
 
 Aplicação web de gerenciamento de tarefas com suporte a drag-and-drop. Organize tarefas em colunas de status (A Fazer / Em Progresso / Concluída), atribua prioridades, categorias, datas de vencimento e adicione comentários.
+http://localhost:3000
 
 ## ✨ Funcionalidades
 
