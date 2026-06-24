@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Format on Agent Stop",
+  "description": "Roda bunx prettier --write . automaticamente quando o agente termina de gerar código, formatando todos os arquivos do projeto.",
+  "version": "1",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "/Users/joaolucasstorzesantos/.bun/bin/bunx prettier --write ."
+  }
+}

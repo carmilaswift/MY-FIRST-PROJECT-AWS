@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "name": "Revisão Completa de Código",
+  "description": "Realiza uma revisão de código completa do aplicativo, verificando qualidade de código, problemas de segurança e padrões de acessibilidade.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Realize uma revisão de código completa do aplicativo. Leia todos os arquivos fonte em src/client e src/server e avalie os seguintes aspectos:\n\n1. **Qualidade de Código**:\n   - Organização e legibilidade do código\n   - Uso adequado de tipos TypeScript\n   - Tratamento de erros\n   - Separação de responsabilidades\n   - Código duplicado ou desnecessário\n   - Nomes de variáveis e funções claros\n\n2. **Segurança**:\n   - Validação e sanitização de inputs do usuário\n   - Proteção contra SQL injection\n   - Proteção contra XSS (Cross-Site Scripting)\n   - Gerenciamento seguro de dados sensíveis\n   - Headers de segurança HTTP\n   - Rate limiting e proteção contra abuso\n\n3. **Acessibilidade (WCAG)**:\n   - Uso correto de elementos semânticos HTML\n   - Labels em formulários e inputs\n   - Atributos ARIA quando necessário\n   - Contraste de cores adequado\n   - Navegação por teclado\n   - Textos alternativos em imagens\n   - Foco visível em elementos interativos\n\nForneça um relatório estruturado com os problemas encontrados, classificados por severidade (crítico, alto, médio, baixo), e sugestões concretas de correção para cada item."
+  },
+  "workspaceFolderName": "project 1",
+  "shortName": "full-code-review"
+}

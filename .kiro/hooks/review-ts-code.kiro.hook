@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Review TypeScript Code",
+  "description": "Quando um arquivo .ts ou .tsx é salvo, revisa o código verificando padrões, tratamento de erros e sugere melhorias.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.ts",
+      "*.tsx"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Revise o arquivo editado e verifique: 1) Padrões de código (naming conventions, organização, consistência de estilo). 2) Tratamento adequado de erros (try/catch onde necessário, erros tipados, mensagens descritivas). 3) Sugira melhorias de legibilidade, performance ou boas práticas TypeScript. Seja conciso e objetivo nas sugestões."
+  },
+  "workspaceFolderName": "project 1",
+  "shortName": "review-ts-code"
+}
